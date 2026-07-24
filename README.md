@@ -1,4 +1,4 @@
-# estudoaws — VPC multi-AZ com NAT Gateway na AWS (Terraform)
+# Estudoaws — VPC multi-AZ com NAT Gateway na AWS (Terraform)
 
 Projeto de estudo de Terraform que provisiona, na AWS, uma topologia de rede em alta
 disponibilidade: uma VPC com subnets públicas e privadas espalhadas por 2 zonas de
@@ -83,6 +83,7 @@ terraform/
    ```bash
    terraform destroy
    ```
+Ou simplesmente rodar a pipelina configurada no GitHub Actions
 
 ## Acessando as instâncias privadas
 
@@ -102,5 +103,7 @@ ao terminar os testes para evitar cobranças indevidas.
 
 ## Próximos passos que irei realizar
 
-- Adicionar um Auto Scaling Group no lugar de instâncias fixas
+- Adicionar um Auto Scaling Group
+- Adicionar Load Balance
+- Adicionar Instâncias EC2 nas subnetes públicas
 - Extrair os recursos repetidos (VPC, subnets, NAT) para módulos Terraform reutilizáveis
